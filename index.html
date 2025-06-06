@@ -274,7 +274,7 @@ const speciesEntriesContainer = document.getElementById('species-list');
 
 async function fetchSpeciesData() {
   const now = new Date().toISOString();
-  const apiUrl = `https://api.inaturalist.org/v1/observations?nelat=50.796744&nelng=-3.643344&swlat=50.785540&swlng=-3.677076&d1=2025-01-01T00:00:00Z&d2=${now}&order_by=created_at&order=desc&per_page=20&verifiable=true`;
+  const apiUrl = `https://api.inaturalist.org/v1/observations?nelat=50.796744&nelng=-3.643344&swlat=50.785540&swlng=-3.677076&d1=2025-01-01T00:00:00Z&d2=${now}&order_by=created_at&order=desc&per_page=50&verifiable=true`;
 
   const response = await fetch(apiUrl);
   const data = await response.json();
