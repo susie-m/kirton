@@ -228,7 +228,7 @@
 </head>
 <body>
 
-<video autoplay muted playsinline loop preload="auto" poster="assets/crediton_static_background_update.png" id="bg-video">
+<video autoplay muted playsinline loop preload="auto" poster="assets/crediton_static_background_update.jpg" id="bg-video">
   <source src="assets/crediton.mp4" type="video/mp4">
 </video>
 
@@ -247,7 +247,7 @@
   <div id="obs-map-and-button">
     <button id="map-toggle">Map View</button>
     <iframe id="map-frame"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.661210%2C50.790142%2C-3.659210%2C50.792142&layer=mapnik&marker=50.791142%2C-3.660210"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.663210,50.788142,-3.657210,50.794142&layer=transportmap&marker=50.791142,-3.660210"
       frameborder="0"></iframe>
   </div>
 
@@ -356,7 +356,7 @@ document.getElementById("map-toggle").addEventListener("click", () => {
     map.style.display = "none";
     button.textContent = "Open Map";
   } else {
-    map.src = "https://www.openstreetmap.org/export/embed.html?bbox=-3.661210%2C50.790142%2C-3.659210%2C50.792142&layer=mapnik&marker=50.791142%2C-3.660210";
+    map.src = "https://www.openstreetmap.org/export/embed.html?bbox=-3.663210,50.788142,-3.657210,50.794142&layer=transportmap&marker=50.791142,-3.660210";
     map.style.display = "block";
     button.textContent = "Close Map";
   }
