@@ -247,7 +247,7 @@
   <div id="obs-map-and-button">
     <button id="map-toggle">Map View</button>
     <iframe id="map-frame"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.663210,50.788142,-3.657210,50.794142&layer=transportmap&marker=50.791142,-3.660210"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.6750,50.7800,-3.6450,50.8000&layer=transportmap&marker=50.7910,-3.6600"
       frameborder="0"></iframe>
   </div>
 
@@ -356,7 +356,7 @@ document.getElementById("map-toggle").addEventListener("click", () => {
     map.style.display = "none";
     button.textContent = "Open Map";
   } else {
-    map.src = "https://www.openstreetmap.org/export/embed.html?bbox=-3.663210,50.788142,-3.657210,50.794142&layer=transportmap&marker=50.791142,-3.660210";
+    map.src = "https://www.openstreetmap.org/export/embed.html?bbox=-3.6750,50.7800,-3.6450,50.8000&layer=transportmap&marker=50.7910,-3.6600";
     map.style.display = "block";
     button.textContent = "Close Map";
   }
